@@ -9,4 +9,4 @@ Then run ` node index.js ` to run the bot.
 This bot uses the [Kadi api](https://api.floofy.dev/ "Click to go to it") made by Chris. You can check it out in his [discord server](https://discord.gg/yDnbEDH "Join discord server")
 
 ### Invite thy bot
-[Click thy link tho discord user](https://phoenixbot.spongebots.tk/invite "pls")
+[Click thy link tho discord user](https://phoenix.spongebots.tk/invite "pls")
