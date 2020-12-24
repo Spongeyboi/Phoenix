@@ -1,0 +1,1 @@
+require("./bots/bot").boot()
