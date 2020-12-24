@@ -18,7 +18,7 @@ exports.boot=async()=>{
     console.log("All shards have started. The bot was marked as ready.")
     setInterval(()=>{
       client.editStatus("online",{name:`${settings.prefix || "!"}help | ${client.guilds.size} guilds | ${client.shards.size} shards`})
-      
+
     },10000)
   })
   client.on("shardReady",(shard,guilds)=>{
@@ -210,7 +210,7 @@ exports.boot=async()=>{
 
   client.registerCommand("kadi",async(message,args)=>{
     var fetch = require("node-fetch");
-    fetch(`https://api.augu.dev/kadi`).then(response=>response.json())
+    fetch(`https://api.floofy.dev/kadi/`).then(response=>response.json())
     .then(res=>{
       console.log(res)
       client.createMessage(message.channel.id,{
