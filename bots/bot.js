@@ -9,18 +9,16 @@ exports.boot=async()=>{
     maxShards:1,
     defaultImageFormat:"png"
   }, {
-    description: settings.description || "A bot made with eris",
-    owner: settings.owner || "a mysterius user",
-    prefix: [settings.prefix,"@mention "]
+    description: settings.description || "A bot",
+    owner: settings.owner || "me",
+    prefix: [settings.prefix || "!","@mention "]
   });
 
   client.on("ready",()=>{
     console.log("All shards have started. The bot was marked as ready.")
     setInterval(()=>{
-      client.editStatus("online",{name:`p!help | ${client.guilds.size} guilds | ${client.shards.size} shards`})
-      stats.servercount = client.guilds.size
-      stats.usercount = client.users.size
-      stats.shardcount = client.shards.size
+      client.editStatus("online",{name:`${settings.prefix || "!"}help | ${client.guilds.size} guilds | ${client.shards.size} shards`})
+      
     },10000)
   })
   client.on("shardReady",(shard,guilds)=>{
