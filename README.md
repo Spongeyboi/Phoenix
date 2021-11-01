@@ -1,3 +1,5 @@
+[Discontinued] No inspiration to get this bot running.the bot's been discontinued for a while now and the repository was archived
+
 # Phoenix
 A discord bot made in eris. With this, you can moderate and do suggestions, and look at red pandas. **I need someone to verify the bot because I can't** :octocat:
 
